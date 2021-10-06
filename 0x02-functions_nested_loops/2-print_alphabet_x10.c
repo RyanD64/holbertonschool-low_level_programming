@@ -11,12 +11,13 @@ int loop = 10;
 
 while (loop < 10)
 {
-putchar ('\n');
+_putchar ('\n');
 loop++;
+}
 
 while (letter < 'z')
 {
-putchar (letter);
+_putchar (letter);
 letter++;
 loop++;
 }
