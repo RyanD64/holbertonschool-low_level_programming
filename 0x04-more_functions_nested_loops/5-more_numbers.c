@@ -9,7 +9,7 @@ void more_numbers(void)
 int letter = 0;
 int i = 1;
 while (i <= 10)
-{	
+{
 while (letter <= 14)
 {
 if (letter / 10 == 0)
