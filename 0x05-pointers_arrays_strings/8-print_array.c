@@ -1,22 +1,23 @@
 #include"main.h"
 
 /**
- *
- *
+ * print_array - print the value of arrays
+ * @a: random number
+ * @n: random number
  */
 
 void print_array(int *a, int n)
 {
-int j[ n ];
-int h,i;
+int j;
 
-for (h = 0;h < n; h++)
+for (j = 0; j < n; j++)
 {
-j[ n ] = h + 100;
+	if (j == n - 1)
+	{
+	printf("%d", a[j]);
+	}
+	else
+	printf("%d, ", a[j]);
 }
-
-for ( i = 0; j < n; j++)
-{
-printf("%d,"n); 
-}
+printf("\n");
 }
