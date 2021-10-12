@@ -2,7 +2,7 @@
 /**
  * _strlen - print the length of a string
  * @s: random value
- * Return: c otherwise 0
+ * Return:c otherwise 0
  */
 
 int _strlen(char *s)
