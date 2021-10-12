@@ -29,13 +29,12 @@ void puts_half(char *ste)
 	int c;
 
 	c = _strlen(ste);
-
 	if (c % 2 != 0)
 	{
-		put = (c - 1) / 2;
+	put = (c - 1) / 2;
 	}
 	else
-		put = (c / 2);
+	put = (c / 2);
 	while (put < c)
 	{
 		_putchar(ste[put]);
