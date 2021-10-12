@@ -31,8 +31,7 @@ void puts_half(char *ste)
 	c = _strlen(ste);
 	if (c % 2 != 0)
 	{
-	put = (c - 1) / 2;
-	c++;
+	put = (c + 1) / 2;
 	}
 	else
 	put = (c / 2);
