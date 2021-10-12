@@ -43,4 +43,3 @@ void puts_half(char *ste)
 	}
 	_putchar('\n');
 }
-
