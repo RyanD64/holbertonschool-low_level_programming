@@ -7,7 +7,7 @@
  * @n: random value
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i = 0;
 
