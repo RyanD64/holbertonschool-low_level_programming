@@ -1,13 +1,14 @@
 #include"main.h"
 
 /**
- * _memcpy - copy n bytes from src to dest(both memory areas)
+ * * _memcpy - copy n bytes from src to dest(both memory areas)
  * @dest: random value
  * @src: random value
  * @n: random value
+ * Return: dest otherwise 1
  */
 
-char_memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i = 0;
 
