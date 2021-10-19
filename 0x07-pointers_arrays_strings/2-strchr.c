@@ -13,6 +13,6 @@ do {
 	{
 	return (s);
 	}
-} while (s++);
+} while (*s++);
 return (NULL);
 }
