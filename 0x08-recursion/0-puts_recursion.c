@@ -1,8 +1,8 @@
 #include"main.h"
 
 /**
-  *
-  *
+  * _puts_recursion - print a string
+  * @s: random number
   */
 
 void _puts_recursion(char *s)
