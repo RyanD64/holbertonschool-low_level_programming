@@ -3,7 +3,7 @@
 
 /**
   * main - print the number of passed arguments
-  * @argc: random number
+  * @argc: random numbers
   * @argv: random character
   * Return: 0 otherwise 1
   */
