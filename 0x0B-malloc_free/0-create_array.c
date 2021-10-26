@@ -17,11 +17,17 @@ if (size == 0)
 	return (NULL);
 }
 
-b = malloc((sizeof(unsigned int)) * (size));
+b = malloc((sizeof(char)) * (size));
+
+if (b == NULL)
+{
+	return (NULL);
+}
 
 for (n = 0; n < size; n++)
 {
-b[n] = c;
+	b[n] = c;
 }
+
 return (b);
 }
