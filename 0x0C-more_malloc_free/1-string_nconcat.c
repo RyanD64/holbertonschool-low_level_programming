@@ -27,6 +27,7 @@ if (s1 == NULL && s2 == NULL)
 
 		if (!fin)
 		{
+			free(fin);
 			return (NULL);
 		}
 
