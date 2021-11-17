@@ -1,7 +1,7 @@
 #include"lists.h"
 
 /**
-  *print_listint - print all the elements into a listint
+  *print_listint - prinis elements
   *@h: random value
   *Return: dumb otherwise 0
 */
