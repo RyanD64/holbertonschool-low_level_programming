@@ -4,8 +4,6 @@
   *print_listint - print all the elements into a listint
   *@h: random value
   *Return: dumb otherwise 0
-  *
-  *
 */
 
 size_t print_listint(const listint_t *h)
