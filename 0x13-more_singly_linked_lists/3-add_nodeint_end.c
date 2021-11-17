@@ -1,9 +1,10 @@
 #include"lists.h"
 
 /**
-  *
-  *
-  *
+  *add_nodeint_end - add a node at tthe end of a linked list
+  *@head: random number
+  *@n: random value
+  *Return: *head otherwise NULL
   */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
