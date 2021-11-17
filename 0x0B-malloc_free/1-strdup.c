@@ -19,7 +19,7 @@ return (NULL);
 s = malloc((sizeof(char)) * (_strlen(str) + 1));
 if (s == NULL)
 {
-free(s);
+free(s)
 return (NULL);
 }
 for (f = 0; str[f] != '\0'; f++)

@@ -21,13 +21,13 @@ if (!s1 && !s2)
 
 fin = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2)));
 
-while (s1[c])
+while (s1[c] && s1)
 {
 	fin[c] = s1[c];
 	c++;
 }
 
-while (s2[d])
+while (s2[d] && s2)
 {
 	fin[c + d] = s2[d];
 	d++;
@@ -51,5 +51,5 @@ int _strlen(char *s)
 	{
 		c++;
 	}
-	return (c);
+	return (1 + _strlen(++s));
 }
