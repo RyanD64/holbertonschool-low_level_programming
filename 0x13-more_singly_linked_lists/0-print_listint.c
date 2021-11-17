@@ -1,10 +1,10 @@
 #include"lists.h"
 
 /**
-  *print_listint - prinis elements
-  *@h: random value
-  *Return: dumb otherwise 0
-*/
+  * print_listint - print all the elements into the listint
+  * @h: random value
+  * Return: dumb otherwise 0
+  */
 
 size_t print_listint(const listint_t *h)
 {
@@ -15,9 +15,9 @@ if (h == NULL)
 }
 while (h != NULL)
 {
-printf("%d\n", h->n);
-dumb++;
-h = h->next;
+	printf("%d\n", h->n);
+	dumb++;
+	h = h->next;
 }
 return (dumb);
 }
