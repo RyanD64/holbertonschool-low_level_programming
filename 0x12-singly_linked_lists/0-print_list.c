@@ -23,9 +23,9 @@ size_t i = 0;
 		else
 		{
 		printf("[%d] %s\n", h->len, h->str);
-		h = h->next;
-		i++;
 		}
+	h = h->next;
+	i++;
 	}
 	return (i);
 }
