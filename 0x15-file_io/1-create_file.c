@@ -1,9 +1,10 @@
 #include"main.h"
 
 /**
-  *
-  *
-  *
+  * create_file - create a file
+  *@filename: random string
+  *@text_content: random dtring
+  *Return: 1 else -1
   */
 
 int create_file(const char *filename, char *text_content)
