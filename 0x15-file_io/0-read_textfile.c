@@ -16,6 +16,10 @@ ssize_t nombresbyte;
 fd = open(filename, O_RDONLY);
 buffer = malloc(sizeof(char) * letters);
 
+if (filename == NULL)
+{
+	return(0);
+}
 
 if (fd == -1)
 	{
@@ -25,7 +29,6 @@ if (fd == -1)
 else
 {
 	nombresbyte = read(fd, buffer, letters);
-	close(fd);
 
 	if (nombresbyte == 0)
 	{
@@ -36,6 +39,6 @@ else
 	{
 		write(STDOUT_FILENO, buffer, letters);
 	}
-}
 return (fd);
+}
 }
