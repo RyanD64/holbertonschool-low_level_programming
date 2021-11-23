@@ -14,6 +14,6 @@ for (loop = 0; loop < 10; loop++)
 	{
 		_putchar (letter);
 	}
-putchar ('\n');
+_putchar ('\n');
 }
 }
