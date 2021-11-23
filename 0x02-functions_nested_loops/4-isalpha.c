@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - print 1 if character is in lowercase
+ * _isalpha - print 1 if character is in lowercase
  *@c: random character
  *Return: (1) otherwise 0
  */
