@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
-  *
-  *
-  *
-  *
+  *print_last_digit - print the last digit of a number
+  *@n: random number
+  *Return: number
   */
 
-int print_last_digit(int n)
+int print_last_digit(int number)
 {
-n = n % 10;
-if(n < 0)
+number = number % 10;
+if(number < 0)
 {
-	n = n * -1;
+	number = number * -1;
 }
-_putchar(n + '0');
-return (n);
+_putchar(number + '0');
+return (number);
 }
