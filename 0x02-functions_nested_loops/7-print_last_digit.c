@@ -2,14 +2,14 @@
 
 /**
   *print_last_digit - print the last digit of a number
-  *@n: random number
+  *@number: random number
   *Return: number
   */
 
 int print_last_digit(int number)
 {
 number = number % 10;
-if(number < 0)
+if (number < 0)
 {
 	number = number * -1;
 }
