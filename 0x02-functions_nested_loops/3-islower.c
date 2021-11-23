@@ -1,25 +1,19 @@
 #include "main.h"
 
 /**
- * - main print 1 if character is lower
- *  Return (0) otherwise 1
+ * _islower - print 1 if character is in lowercase
+ *@c: random character
+ *Return: (1) otherwise 0
  */
 
-int main(void)
+int _islower(int c)
 {
-int letter = 'a';
-int LETTER = 'A';
-
-if (letter <= 'z')
+if (c >= 'a' && c <= 'z')
 {
-_putchar(letter);
-letter++;
+return (1);
 }
-else if (LETTER <= 'Z')
+else
 {
-_putchar(LETTER);
-LETTER++;
-}
 return (0);
-
+}
 }
