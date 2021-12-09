@@ -11,7 +11,7 @@ int main(void)
 
 	while (*s)
 	{
-			putchar (*s++);
+		putchar (*s++);
 	}
 	return (1);
 }
