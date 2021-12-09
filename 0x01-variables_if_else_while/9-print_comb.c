@@ -7,14 +7,17 @@
 
 int main(void)
 {
-int number = '0';
+int i = 48;
 
-while (number <= '9')
+while (i < 58)
 {
-putchar(number);
-putchar(',');
-putchar(' ');
-number++;
+putchar(i);
+i++;
+if (i < 58)
+{
+putchar(44);
+putchar(32);
+}
 }
 putchar('\n');
 return (0);
