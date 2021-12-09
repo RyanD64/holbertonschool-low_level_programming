@@ -7,19 +7,23 @@
 
 int main(void)
 {
-int numbers = '0', letters = 'f';
+int i = 48;
 
-while (numbers <= 9)
+while (i < 58)
 {
-putchar(numbers);
-numbers++;
+	putchar(i);
+	i++;
 }
-while (letters <= 'f')
+
+i = 97;
+
+while (i < 103)
 {
-putchar(letters);
-letters++;
+	putchar(i);
+	i++;
 }
+
 putchar('\n');
-return (0);
 
+return (0);
 }
