@@ -7,22 +7,35 @@
 
 void print_triangle(int size)
 {
-	int ligne = 0;
-	int colonne = 0;
+int ligne = 1;
+int colonne;
 
-	if (size <= 0)
+if (size > 0)
+{
+	while (ligne <= size)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (ligne = 0  ; ligne < size ; ligne++)
+		colonne = 1;
+		while (colonne <= size - ligne)
 		{
-			for (colonne = 0 ; colonne < size ; colonne++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
+			_putchar(' ');
+			colonne++;
 		}
+		while (colonne <= size)
+		{
+			_putchar('#');
+			colonne++;
+		}
+		while (colonne <= size)
+		{
+			_putchar('#');
+			colonne++;
+		}
+		_putchar('\n');
+		ligne++;
 	}
+}
+else
+{
+	_putchar('\n');
+}
 }
