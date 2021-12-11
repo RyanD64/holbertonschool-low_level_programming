@@ -12,79 +12,33 @@ char *_strdup(char *str);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int c = 0, d = 0;
-char *fin;
+char *sEnd;
+unsigned int l1, l2, i;
 
-if (s1 == NULL && s2 == NULL)
+if (s1 == NULL)
+l1 = 0;
+else
 {
-	return (_strdup(s2));
+for (l1 = 0; *(s1 + l1); l1++)
+;
 }
-	if (s2 == NULL && s1 == NULL)
-	{
-		return (_strdup(s1));
-	}
-	fin = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
-
-		if (!fin)
-		{
-			free(fin);
-			return (NULL);
-		}
-
-			if (s1 != NULL && s2 != NULL)
-			{
-			while (s1[c])
-			{
-				fin[c] = s1[c];
-				c++;
-			}
-				while (s2[d] && n)
-				{
-					fin[c + d] = s2[d];
-					d++;
-					n--;
-				}
-			}
-	fin[c + d] = '\0';
-	return (fin);
-}
-
-/**
-     * _strlen - print the length of a string
-	* @s: random value
-	* Return:c otherwise 0
-	*/
-
-int _strlen(char *s)
+if (s2 == NULL)
+l2 = 0;
+else
 {
-int e = 0;
-while (s[e] != '\0')
-e++;
-return (e);
+for (l2 = 0; *(s2 + l2); l2++)
+;
+}
+if (n < l2)
+l2 = n;
+sEnd = malloc(sizeof(char) * (l1 + l2 + 6));
+if (sEnd == NULL)
+return (NULL);
+for (i = 0; i < l1; i++)
+sEnd[i] = s1[i];
+for (i = 0; i < l2; i++)
+sEnd[l1 + i] = s2[i];
+*(sEnd + l1 + l2) = '\0';
+return (sEnd);
 }
 
-/**
-  * *_strdup - dupmicate a string
-  * @str: random value
-  * Return: s otherwise 0
-  */
-
-char *_strdup(char *str)
-{
-	char *s = NULL;
-	int f;
-
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-		s = malloc((sizeof(char)) * (_strlen(str) + 1));
-		if (s == NULL)
-		{
-			free(s);
-			return (NULL);
-		}
-			for (f = 0; str[f] != '\0'; f++)
-			s[f] = str[f];
-	return (s);
-}
