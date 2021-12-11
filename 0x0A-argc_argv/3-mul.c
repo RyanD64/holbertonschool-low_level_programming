@@ -10,8 +10,18 @@
 
 int main(int argc, char *argv[])
 {
-if(argc = '\0' || argv = [])
-printf("%s\n", argv[0]);
-(void)argc;
+int x, y, result;
+if (argc != 3)
+{
+printf("Error\n");
+return (1);
+}
+else
+{
+x = atoi(argv[1]);
+y = atoi(argv[2]);
+result = x *y;
+}
+printf("%d\n", result);
 return (0);
 }
