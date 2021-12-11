@@ -11,45 +11,38 @@
 
 char *str_concat(char *s1, char *s2)
 {
-int c = 0, d = 0;
-char *fin;
+unsigned int s = 0, d = 0;
+char *v;
 
-if (!s1 && !s2)
+if (s1 == NULL && s2 == NULL)
 {
-	return (NULL);
+v = malloc(1);
+return (v);
 }
-
-fin = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2)));
-
-while (s1[c] && s1)
+if (s1 != NULL)
 {
-	fin[c] = s1[c];
-	c++;
+for (s = 0; s1[s]; s++)
+continue;
 }
-
-while (s2[d] && s2)
+if (s2 != NULL)
 {
-	fin[c + d] = s2[d];
-	d++;
+for (d = 0; s2[d]; d++)
+continue;
 }
-fin[c + d] = '\0';
-
-return (fin);
-}
-
-/**
-   * _strlen - print the length of a string
-    * @s: random value
-     * Return:c otherwise 0
-      */
-
-int _strlen(char *s)
+v = (char *)malloc((s * sizeof(char)) + (d * sizeof(char) + 1));
+if (v == NULL)
+return (NULL);
+if (s1 != NULL)
 {
-	int c = 0;
-
-	while (s[c] != '\0')
-	{
-		c++;
-	}
-	return (1 + _strlen(++s));
+for (s = 0; s1[s]; s++)
+v[s] = s1[s];
+}
+if (s2 != NULL)
+{
+for (d = 0; s2[d]; d++)
+{
+v[s] = s2[d];
+s++;
+}															}
+return (v);
 }
