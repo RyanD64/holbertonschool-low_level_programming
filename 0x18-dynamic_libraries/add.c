@@ -1,4 +1,4 @@
-#include "main2.h"
-
-int(add) void
+int add(int a, int b)
 {
+return (a + b);
+}
