@@ -25,8 +25,6 @@ dlistint_t *new;
 	}
 	else
 	{
-		new->n = n;
-		new->prev = NULL;
 		new->next = (*head);
 		(*head)->prev = new;
 		*head = new->next;
