@@ -15,6 +15,9 @@ dlistint_t *new;
 	{
 		return (NULL);
 	}
+	new->prev = NULL;
+	new->next = NULL;
+	new->n = n;
 
 	if (*head == NULL)
 	{
