@@ -28,13 +28,11 @@ int jump_search(int *array, size_t size, int value)
 
 	for (i = start; i < size && i <= end; i++)
 	{
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 		{
-			printf("Value checked array[%ld] = [%d]\n", i, value);
 			return (i);
 		}
-		else
-			printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 	}
 	return (-1);
 }
