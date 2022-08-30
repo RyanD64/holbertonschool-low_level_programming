@@ -10,25 +10,27 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	int l = 0, r = (size - 1), i;
+	int l = 0, r = (size - 1), i, m = 0;
 
 	if (array == NULL || size == 0)
 		return (-1);
 
 	while (l <= r)
 	{
-	int m = ((l + r) / 2);
 		printf("Searching in array: ");
 
 		for (i = l; i <= r; i++)
 		{
 			if (i == r)
-				printf("%d ", array[i]);
+			{
+				printf("%d\n", array[r]);
+				break;
+			}
 			else
 				printf("%d, ", array[i]);
 		}
-		printf("\n");
 
+		m = ((l + r) / 2);
 		if (array[m] < value)
 			l = (m + 1);
 		else if (array[m] > value)
